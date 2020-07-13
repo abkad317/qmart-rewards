@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  h2:
+    console:
+      enabled: true
+
+rewards:
+  slab1-lower-limit: 50
+  slab2-lower-limit: 100
+  slab1-points: 1
+  slab2-points: 2
