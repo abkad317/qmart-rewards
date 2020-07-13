@@ -31,13 +31,13 @@ insert into CUSTOMER (ID, NAME) values (101, 'Jenny');
 #### 3. ```mvn spring-boot:run```
 #### 4. Run following curl commands for customer-1 orders
 
-May-2020 - (2x$10 + 1x$50) + 1x10 = 80 points
+- May-2020 - (2x$10 + 1x$50) + 1x10 = 80 points
 
 ```curl -d '{"totalPrice":110,"status":"SUCCESS", "type":"CREDIT_CARD", "customer_id":100, "createDate":"2020-05-09T06:00:45"}' -H 'Content-Type: application/json' http://localhost:8080/orders```
 
 ```curl -d '{"totalPrice":60,"status":"SUCCESS", "type":"CREDIT_CARD", "customer_id":100, "createDate":"2020-05-30T06:00:45"}' -H 'Content-Type: application/json' http://localhost:8080/orders```
 
-June-2020 - (2x$10 + 1x$50) + 1x$10 + (2x$20 + 1x$50) = 170
+- June-2020 - (2x$10 + 1x$50) + 1x$10 + (2x$20 + 1x$50) = 170
 
 ```curl -d '{"totalPrice":110,"status":"SUCCESS", "type":"CREDIT_CARD", "customer_id":100, "createDate":"2020-06-09T06:00:45"}' -H 'Content-Type: application/json' http://localhost:8080/orders```
 
@@ -45,19 +45,19 @@ June-2020 - (2x$10 + 1x$50) + 1x$10 + (2x$20 + 1x$50) = 170
 
 ```curl -d '{"totalPrice":120,"status":"SUCCESS", "type":"CREDIT_CARD", "customer_id":100, "createDate":"2020-06-30T16:00:45"}' -H 'Content-Type: application/json' http://localhost:8080/orders```
 
-July-2020 - 2x$900 + 1x$50 = 1850
+- July-2020 - 2x$900 + 1x$50 = 1850
 
 ```curl -d '{"totalPrice":1000,"status":"SUCCESS", "type":"CASH", "customer_id":100, "createDate":"2020-07-01T06:00:45"}' -H 'Content-Type: application/json' http://localhost:8080/orders```
 
 #### 5. Run following curl commands for customer-2 orders
 
-Apr-2020 - (2x$11 + 1x$50) + 1x$10 = 80 points
+- Apr-2020 - (2x$11 + 1x$50) + 1x$10 = 81 points
 
 ```curl -d '{"totalPrice":110.89,"status":"SUCCESS", "type":"CREDIT_CARD", "customer_id":101, "createDate":"2020-04-09T06:00:45"}' -H 'Content-Type: application/json' http://localhost:8080/orders```
 
 ```curl -d '{"totalPrice":60.02,"status":"SUCCESS", "type":"CHECK", "customer_id":101, "createDate":"2020-04-30T06:00:45"}' -H 'Content-Type: application/json' http://localhost:8080/orders```
 
-June-2020 - (2x$10 + 1x$50) + 1x$10 + (2x$20 + 1x$50) + 2x$1400 + 1x$50 = 3020
+- June-2020 - (2x$10 + 1x$50) + 1x$10 + (2x$20 + 1x$50) + 2x$1400 + 1x$50 = 3020
 
 ```curl -d '{"totalPrice":110,"status":"SUCCESS", "type":"CREDIT_CARD", "customer_id":101, "createDate":"2020-06-09T06:00:45"}' -H 'Content-Type: application/json' http://localhost:8080/orders```
 
